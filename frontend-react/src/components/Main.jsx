@@ -2,6 +2,9 @@ import React from 'react'
 import Header from './Header';
 import Footer from './Footer';
 import Button from './Button';
+import Login from "./Login";
+import Register from "./Register";
+
 
 const Main = () => {
   return (
@@ -27,7 +30,7 @@ const Main = () => {
             with our seamless integration of AI, Django backend processing, and
             dynamic frontend visualization.
           </p>
-          <Button text="Login" class="btn-info" />
+          <Button text="Login" class="btn-outline-info" />
         </div>
       </div>
     </>
