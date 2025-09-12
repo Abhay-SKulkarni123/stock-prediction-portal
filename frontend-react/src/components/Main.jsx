@@ -30,7 +30,7 @@ const Main = () => {
             with our seamless integration of AI, Django backend processing, and
             dynamic frontend visualization.
           </p>
-          <Button text="Login" class="btn-outline-info" />
+          <Button text="Explore Now" class="btn-info" url="/dashboard/" />
         </div>
       </div>
     </>
