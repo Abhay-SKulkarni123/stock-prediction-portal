@@ -64,11 +64,14 @@ const Dashboard = () => {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
+              id="ticker"
+              name="ticker"
               className="form-control"
               placeholder="Enter Stock Ticker"
               onChange={(e) => setTicker(e.target.value)}
               required
             />
+
             <small>{error && <div className="text-danger">{error}</div>}</small>
             <button type="submit" className="btn btn-info mt-3">
               {loading ? (

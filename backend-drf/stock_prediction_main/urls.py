@@ -18,8 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+
+def root_view(request):
+    return JsonResponse({"status": "ok", "message": "Stock Prediction API Root"})
 
 urlpatterns = [
+    path("", root_view),  # Add root endpoint
     path("admin/", admin.site.urls),
 
     # Base API Endpoint
