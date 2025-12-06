@@ -6,11 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Login from './components/Login.jsx'
+import AuthProvider from './AuthProvider.jsx'
 
 function App() {
 
   return (
     <>
+      <AuthProvider>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -20,6 +22,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }
