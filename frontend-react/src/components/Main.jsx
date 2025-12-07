@@ -12,7 +12,7 @@ const Main = () => {
             This Stock Prediction Portal utilizes Machine Learning Model to make
             Predictions and help the user to get Optimised and Accurate Results
           </p>
-          <Button text="Login" class="btn-outline-info"/>
+          <Button text="Explore Now" class="btn-info" url="/dashboard" />
         </div>
       </div>
     </>
